@@ -13,7 +13,7 @@ namespace LayeredArchitectureSample.Model
         {
             get { return _rrp; }
         }
-
+        
         private decimal _sellingPrice;
         public decimal SellingPrice
         {

@@ -11,5 +11,6 @@ namespace LayeredArchitectureSample.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public Price Price { get; set; }
+
     }
 }

@@ -39,7 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Interfaces\IProductListResponse.cs" />
+    <Compile Include="Interfaces\IProductViewModel.cs" />
+    <Compile Include="ProductMapperExtensionMethods.cs" />
+    <Compile Include="ProductService.cs" />
+    <Compile Include="Request\ProductListRequest.cs" />
+    <Compile Include="Response\ProductListResponse.cs" />
+    <Compile Include="ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
