@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitectureSample.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitectureSample.Presentation", "LayeredArchitectureSample.Presentation\LayeredArchitectureSample.Presentation.csproj", "{3C8E9425-3B05-4199-9AE3-01D1F9D0B65A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitectureSample.WebUI", "LayeredArchitectureSample.WebUI\LayeredArchitectureSample.WebUI.csproj", "{4FB3F9A6-7A6B-46E0-8C29-2B0DA16B6679}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitectureSample.Repository", "LayeredArchitectureSample.Repository\LayeredArchitectureSample.Repository.csproj", "{49F4F524-1B84-463D-ABC7-E870C043C1CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Data Access Layer", "1-Data Access Layer", "{135A6727-1F4B-4755-83A2-ABC86BA20CE9}"
@@ -25,6 +23,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		enterprise-level layered ASP.NET application's typical architecture.png = enterprise-level layered ASP.NET application's typical architecture.png
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{32E1C643-F42D-4295-8115-C2EDE754005B}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Machine.Specifications.dll = Lib\Machine.Specifications.dll
+		Lib\Machine.Specifications.NUnit.dll = Lib\Machine.Specifications.NUnit.dll
+		Lib\nunit.framework.dll = Lib\nunit.framework.dll
+		Lib\StructureMap.dll = Lib\StructureMap.dll
+		Lib\TestDriven.Framework.dll = Lib\TestDriven.Framework.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitectureSample.WebUI", "LayeredArchitectureSample.WebUI\LayeredArchitectureSample.WebUI.csproj", "{4883DEDE-64B9-4B76-AF0E-F12E49D66985}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{ABD7B532-8E38-426C-92FF-EF01312152AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitectureSample.Test", "LayeredArchitectureSample.Test\LayeredArchitectureSample.Test.csproj", "{2BC5B01B-98B1-4808-8923-1B1ED9CCCDF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,23 +57,28 @@ Global
 		{3C8E9425-3B05-4199-9AE3-01D1F9D0B65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C8E9425-3B05-4199-9AE3-01D1F9D0B65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C8E9425-3B05-4199-9AE3-01D1F9D0B65A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FB3F9A6-7A6B-46E0-8C29-2B0DA16B6679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FB3F9A6-7A6B-46E0-8C29-2B0DA16B6679}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FB3F9A6-7A6B-46E0-8C29-2B0DA16B6679}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FB3F9A6-7A6B-46E0-8C29-2B0DA16B6679}.Release|Any CPU.Build.0 = Release|Any CPU
 		{49F4F524-1B84-463D-ABC7-E870C043C1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49F4F524-1B84-463D-ABC7-E870C043C1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49F4F524-1B84-463D-ABC7-E870C043C1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49F4F524-1B84-463D-ABC7-E870C043C1CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4883DEDE-64B9-4B76-AF0E-F12E49D66985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4883DEDE-64B9-4B76-AF0E-F12E49D66985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4883DEDE-64B9-4B76-AF0E-F12E49D66985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4883DEDE-64B9-4B76-AF0E-F12E49D66985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC5B01B-98B1-4808-8923-1B1ED9CCCDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC5B01B-98B1-4808-8923-1B1ED9CCCDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC5B01B-98B1-4808-8923-1B1ED9CCCDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC5B01B-98B1-4808-8923-1B1ED9CCCDF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{49F4F524-1B84-463D-ABC7-E870C043C1CB} = {135A6727-1F4B-4755-83A2-ABC86BA20CE9}
 		{FE8CC586-336F-42B5-9D36-3A64CC3D381A} = {34101238-8BCF-479C-B438-7A25E67FDBCE}
 		{1F5CE287-E1B1-4AAB-ADE3-FEBFC3FE7AF8} = {E1AAE2BE-76C0-4331-93C9-5EE910B3042E}
 		{3C8E9425-3B05-4199-9AE3-01D1F9D0B65A} = {A27A32C6-AFF4-4EBF-97CF-EE2B9DACD5D7}
-		{4FB3F9A6-7A6B-46E0-8C29-2B0DA16B6679} = {65639790-A693-41BB-9E0E-465FE5C583AA}
+		{4883DEDE-64B9-4B76-AF0E-F12E49D66985} = {65639790-A693-41BB-9E0E-465FE5C583AA}
+		{49F4F524-1B84-463D-ABC7-E870C043C1CB} = {135A6727-1F4B-4755-83A2-ABC86BA20CE9}
+		{2BC5B01B-98B1-4808-8923-1B1ED9CCCDF2} = {ABD7B532-8E38-426C-92FF-EF01312152AC}
 	EndGlobalSection
 EndGlobal

@@ -12,6 +12,6 @@ namespace LayeredArchitectureSample.Presentation
         Model.EnmCustomerType EnmCustomerType { get; }
         string ErrorMessage { set; }
 
-        void Display(IList<ProductViewModel> Products);
+        void Display(IList<ProductViewModel> products);
     }
 }
